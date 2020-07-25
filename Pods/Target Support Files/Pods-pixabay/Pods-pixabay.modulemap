@@ -1,0 +1,6 @@
+framework module Pods_pixabay {
+  umbrella header "Pods-pixabay-umbrella.h"
+
+  export *
+  module * { export * }
+}
