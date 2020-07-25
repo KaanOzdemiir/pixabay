@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,7 @@
 		F72CF6FB24CC1E0E007F4311 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F72CF6F924CC1E0E007F4311 /* Main.storyboard */; };
 		F72CF6FD24CC1E0F007F4311 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F72CF6FC24CC1E0F007F4311 /* Assets.xcassets */; };
 		F72CF70024CC1E0F007F4311 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F72CF6FE24CC1E0F007F4311 /* LaunchScreen.storyboard */; };
+		F72CF70D24CC2278007F4311 /* ImageResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72CF70C24CC2277007F4311 /* ImageResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		F72CF6FC24CC1E0F007F4311 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F72CF6FF24CC1E0F007F4311 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F72CF70124CC1E0F007F4311 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F72CF70C24CC2277007F4311 /* ImageResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +50,6 @@
 				C16F4F4D9C676896960CE9F0 /* Pods-pixabay.debug.xcconfig */,
 				19E8CF2286B5E1D0EC30160E /* Pods-pixabay.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -106,6 +107,7 @@
 		F72CF70824CC20A0007F4311 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				F72CF70C24CC2277007F4311 /* ImageResponse.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -239,6 +241,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F72CF70D24CC2278007F4311 /* ImageResponse.swift in Sources */,
 				F72CF6F824CC1E0E007F4311 /* ViewController.swift in Sources */,
 				F72CF6F424CC1E0E007F4311 /* AppDelegate.swift in Sources */,
 				F72CF6F624CC1E0E007F4311 /* SceneDelegate.swift in Sources */,
