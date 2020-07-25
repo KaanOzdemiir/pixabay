@@ -13,17 +13,29 @@ import ObjectMapper
 class ImageResponse: Mappable {
     var total, totalHits: Int
     var hits: [HitData]
+    var errorCode: String
+    var message: String
 
-    init(total: Int, totalHits: Int, hits: [HitData]) {
+    init(
+        total: Int = 0,
+        totalHits: Int = 0,
+        hits: [HitData] = [],
+        errorCode: String = "",
+        message: String = ""
+    ) {
         self.total = total
         self.totalHits = totalHits
         self.hits = hits
+        self.errorCode = errorCode
+        self.message = message
     }
     
     required init?(map: Map) {
         self.total = 0
         self.totalHits = 0
         self.hits = []
+        self.errorCode = ""
+        self.message = ""
     }
     
     func mapping(map: Map) {

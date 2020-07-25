@@ -15,6 +15,11 @@
 		F72CF6FD24CC1E0F007F4311 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F72CF6FC24CC1E0F007F4311 /* Assets.xcassets */; };
 		F72CF70024CC1E0F007F4311 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F72CF6FE24CC1E0F007F4311 /* LaunchScreen.storyboard */; };
 		F72CF70D24CC2278007F4311 /* ImageResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72CF70C24CC2277007F4311 /* ImageResponse.swift */; };
+		F72CF71124CC250A007F4311 /* AlamofireService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72CF71024CC250A007F4311 /* AlamofireService.swift */; };
+		F72CF71324CC2541007F4311 /* URLPaths.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72CF71224CC2541007F4311 /* URLPaths.swift */; };
+		F72CF71524CC2581007F4311 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72CF71424CC2581007F4311 /* AppConstants.swift */; };
+		F72CF71724CC261E007F4311 /* ImageRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72CF71624CC261E007F4311 /* ImageRepo.swift */; };
+		F72CF71924CC26C0007F4311 /* CarouselViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72CF71824CC26C0007F4311 /* CarouselViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +35,11 @@
 		F72CF6FF24CC1E0F007F4311 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F72CF70124CC1E0F007F4311 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F72CF70C24CC2277007F4311 /* ImageResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageResponse.swift; sourceTree = "<group>"; };
+		F72CF71024CC250A007F4311 /* AlamofireService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireService.swift; sourceTree = "<group>"; };
+		F72CF71224CC2541007F4311 /* URLPaths.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLPaths.swift; sourceTree = "<group>"; };
+		F72CF71424CC2581007F4311 /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
+		F72CF71624CC261E007F4311 /* ImageRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageRepo.swift; sourceTree = "<group>"; };
+		F72CF71824CC26C0007F4311 /* CarouselViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,16 +92,12 @@
 		F72CF6F224CC1E0E007F4311 /* pixabay */ = {
 			isa = PBXGroup;
 			children = (
+				F72CF6F924CC1E0E007F4311 /* Main.storyboard */,
 				F72CF70B24CC20BC007F4311 /* API */,
 				F72CF70A24CC20AD007F4311 /* AppModules */,
 				F72CF70824CC20A0007F4311 /* Model */,
 				F72CF70724CC2098007F4311 /* Helpers */,
-				F72CF6F324CC1E0E007F4311 /* AppDelegate.swift */,
-				F72CF6F524CC1E0E007F4311 /* SceneDelegate.swift */,
-				F72CF6F724CC1E0E007F4311 /* ViewController.swift */,
-				F72CF6F924CC1E0E007F4311 /* Main.storyboard */,
-				F72CF6FC24CC1E0F007F4311 /* Assets.xcassets */,
-				F72CF6FE24CC1E0F007F4311 /* LaunchScreen.storyboard */,
+				F72CF70F24CC2499007F4311 /* SupportingFiles */,
 				F72CF70124CC1E0F007F4311 /* Info.plist */,
 			);
 			path = pixabay;
@@ -100,6 +106,8 @@
 		F72CF70724CC2098007F4311 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				F72CF71224CC2541007F4311 /* URLPaths.swift */,
+				F72CF71424CC2581007F4311 /* AppConstants.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -115,6 +123,7 @@
 		F72CF70A24CC20AD007F4311 /* AppModules */ = {
 			isa = PBXGroup;
 			children = (
+				F72CF70E24CC2482007F4311 /* Carousel */,
 			);
 			path = AppModules;
 			sourceTree = "<group>";
@@ -122,8 +131,30 @@
 		F72CF70B24CC20BC007F4311 /* API */ = {
 			isa = PBXGroup;
 			children = (
+				F72CF71024CC250A007F4311 /* AlamofireService.swift */,
 			);
 			path = API;
+			sourceTree = "<group>";
+		};
+		F72CF70E24CC2482007F4311 /* Carousel */ = {
+			isa = PBXGroup;
+			children = (
+				F72CF6F724CC1E0E007F4311 /* ViewController.swift */,
+				F72CF71624CC261E007F4311 /* ImageRepo.swift */,
+				F72CF71824CC26C0007F4311 /* CarouselViewModel.swift */,
+			);
+			path = Carousel;
+			sourceTree = "<group>";
+		};
+		F72CF70F24CC2499007F4311 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				F72CF6F324CC1E0E007F4311 /* AppDelegate.swift */,
+				F72CF6F524CC1E0E007F4311 /* SceneDelegate.swift */,
+				F72CF6FC24CC1E0F007F4311 /* Assets.xcassets */,
+				F72CF6FE24CC1E0F007F4311 /* LaunchScreen.storyboard */,
+			);
+			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -243,7 +274,12 @@
 			files = (
 				F72CF70D24CC2278007F4311 /* ImageResponse.swift in Sources */,
 				F72CF6F824CC1E0E007F4311 /* ViewController.swift in Sources */,
+				F72CF71324CC2541007F4311 /* URLPaths.swift in Sources */,
+				F72CF71724CC261E007F4311 /* ImageRepo.swift in Sources */,
+				F72CF71924CC26C0007F4311 /* CarouselViewModel.swift in Sources */,
 				F72CF6F424CC1E0E007F4311 /* AppDelegate.swift in Sources */,
+				F72CF71524CC2581007F4311 /* AppConstants.swift in Sources */,
+				F72CF71124CC250A007F4311 /* AlamofireService.swift in Sources */,
 				F72CF6F624CC1E0E007F4311 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -392,6 +428,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8ZB49XM27T;
 				INFOPLIST_FILE = pixabay/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -411,6 +448,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8ZB49XM27T;
 				INFOPLIST_FILE = pixabay/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
