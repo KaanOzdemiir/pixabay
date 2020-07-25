@@ -15,6 +15,13 @@ class CarouselCollectionViewCell: UICollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        setFont()
+        
+        print(titleLabel.font.familyName)
+    }
+    
+    func setFont() {
+        titleLabel.font = TypeFace.regularFont(size: 16)
     }
 
 }

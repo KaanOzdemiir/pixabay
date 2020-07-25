@@ -22,6 +22,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         NetworkActivityLogger.shared.startLogging()
         #endif
         
+        setDefaultFont()
+        
         return true
     }
 
@@ -42,3 +44,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 }
 
+extension AppDelegate {
+    func setDefaultFont() {
+        TypeFace.defaultFontFamily = "RopaSans"
+    }
+}

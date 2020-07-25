@@ -22,6 +22,9 @@
 		F72CF71924CC26C0007F4311 /* CarouselViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72CF71824CC26C0007F4311 /* CarouselViewModel.swift */; };
 		F7CBD94124CC2F8600340D56 /* CarouselCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CBD93F24CC2F8600340D56 /* CarouselCollectionViewCell.swift */; };
 		F7CBD94224CC2F8600340D56 /* CarouselCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7CBD94024CC2F8600340D56 /* CarouselCollectionViewCell.xib */; };
+		F7CBD94A24CC335D00340D56 /* TypeFace.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CBD94924CC335D00340D56 /* TypeFace.swift */; };
+		F7CBD95724CC408100340D56 /* RopaSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F7CBD95424CC408100340D56 /* RopaSans-Italic.ttf */; };
+		F7CBD95824CC408100340D56 /* RopaSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F7CBD95524CC408100340D56 /* RopaSans-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +47,9 @@
 		F72CF71824CC26C0007F4311 /* CarouselViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselViewModel.swift; sourceTree = "<group>"; };
 		F7CBD93F24CC2F8600340D56 /* CarouselCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselCollectionViewCell.swift; sourceTree = "<group>"; };
 		F7CBD94024CC2F8600340D56 /* CarouselCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarouselCollectionViewCell.xib; sourceTree = "<group>"; };
+		F7CBD94924CC335D00340D56 /* TypeFace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeFace.swift; sourceTree = "<group>"; };
+		F7CBD95424CC408100340D56 /* RopaSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RopaSans-Italic.ttf"; sourceTree = "<group>"; };
+		F7CBD95524CC408100340D56 /* RopaSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RopaSans-Regular.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +102,7 @@
 		F72CF6F224CC1E0E007F4311 /* pixabay */ = {
 			isa = PBXGroup;
 			children = (
+				F7CBD94324CC32BC00340D56 /* Font */,
 				F72CF6F924CC1E0E007F4311 /* Main.storyboard */,
 				F72CF70B24CC20BC007F4311 /* API */,
 				F72CF70A24CC20AD007F4311 /* AppModules */,
@@ -171,6 +178,24 @@
 			path = CollectionViewCell;
 			sourceTree = "<group>";
 		};
+		F7CBD94324CC32BC00340D56 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				F7CBD94824CC32F100340D56 /* RapoSans */,
+				F7CBD94924CC335D00340D56 /* TypeFace.swift */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		F7CBD94824CC32F100340D56 /* RapoSans */ = {
+			isa = PBXGroup;
+			children = (
+				F7CBD95424CC408100340D56 /* RopaSans-Italic.ttf */,
+				F7CBD95524CC408100340D56 /* RopaSans-Regular.ttf */,
+			);
+			path = RapoSans;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -231,8 +256,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7CBD95824CC408100340D56 /* RopaSans-Regular.ttf in Resources */,
 				F7CBD94224CC2F8600340D56 /* CarouselCollectionViewCell.xib in Resources */,
 				F72CF70024CC1E0F007F4311 /* LaunchScreen.storyboard in Resources */,
+				F7CBD95724CC408100340D56 /* RopaSans-Italic.ttf in Resources */,
 				F72CF6FD24CC1E0F007F4311 /* Assets.xcassets in Resources */,
 				F72CF6FB24CC1E0E007F4311 /* Main.storyboard in Resources */,
 			);
@@ -289,6 +316,7 @@
 			files = (
 				F7CBD94124CC2F8600340D56 /* CarouselCollectionViewCell.swift in Sources */,
 				F72CF70D24CC2278007F4311 /* ImageResponse.swift in Sources */,
+				F7CBD94A24CC335D00340D56 /* TypeFace.swift in Sources */,
 				F72CF6F824CC1E0E007F4311 /* ViewController.swift in Sources */,
 				F72CF71324CC2541007F4311 /* URLPaths.swift in Sources */,
 				F72CF71724CC261E007F4311 /* ImageRepo.swift in Sources */,

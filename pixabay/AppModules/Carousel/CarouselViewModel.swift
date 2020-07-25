@@ -19,6 +19,9 @@ class CarouselViewModel {
     var response = ImageResponse()
     var imageRatio: CGFloat = 1
     
+    var currenIndexPath = IndexPath(item: 0, section: 0)
+    
+    
     func fetchImages(params: [String: Any], queryItems: [URLQueryItem]) {
         imageRepo.fecthImages(params: params, queryItems: queryItems).subscribe(onNext: { [weak self] (response) in
             self?.imageRatio = CGFloat((response.hits.first?.imageWidth ?? 1) / (response.hits.first?.imageHeight ?? 1))
@@ -26,5 +29,6 @@ class CarouselViewModel {
         })
         .disposed(by: disposeBag)
     }
+    
 }
 
