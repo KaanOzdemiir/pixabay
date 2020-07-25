@@ -20,6 +20,8 @@
 		F72CF71524CC2581007F4311 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72CF71424CC2581007F4311 /* AppConstants.swift */; };
 		F72CF71724CC261E007F4311 /* ImageRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72CF71624CC261E007F4311 /* ImageRepo.swift */; };
 		F72CF71924CC26C0007F4311 /* CarouselViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72CF71824CC26C0007F4311 /* CarouselViewModel.swift */; };
+		F7CBD94124CC2F8600340D56 /* CarouselCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CBD93F24CC2F8600340D56 /* CarouselCollectionViewCell.swift */; };
+		F7CBD94224CC2F8600340D56 /* CarouselCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7CBD94024CC2F8600340D56 /* CarouselCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,8 @@
 		F72CF71424CC2581007F4311 /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
 		F72CF71624CC261E007F4311 /* ImageRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageRepo.swift; sourceTree = "<group>"; };
 		F72CF71824CC26C0007F4311 /* CarouselViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselViewModel.swift; sourceTree = "<group>"; };
+		F7CBD93F24CC2F8600340D56 /* CarouselCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselCollectionViewCell.swift; sourceTree = "<group>"; };
+		F7CBD94024CC2F8600340D56 /* CarouselCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarouselCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +143,7 @@
 		F72CF70E24CC2482007F4311 /* Carousel */ = {
 			isa = PBXGroup;
 			children = (
+				F7CBD93E24CC2F6900340D56 /* CollectionViewCell */,
 				F72CF6F724CC1E0E007F4311 /* ViewController.swift */,
 				F72CF71624CC261E007F4311 /* ImageRepo.swift */,
 				F72CF71824CC26C0007F4311 /* CarouselViewModel.swift */,
@@ -155,6 +160,15 @@
 				F72CF6FE24CC1E0F007F4311 /* LaunchScreen.storyboard */,
 			);
 			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		F7CBD93E24CC2F6900340D56 /* CollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				F7CBD93F24CC2F8600340D56 /* CarouselCollectionViewCell.swift */,
+				F7CBD94024CC2F8600340D56 /* CarouselCollectionViewCell.xib */,
+			);
+			path = CollectionViewCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -217,6 +231,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7CBD94224CC2F8600340D56 /* CarouselCollectionViewCell.xib in Resources */,
 				F72CF70024CC1E0F007F4311 /* LaunchScreen.storyboard in Resources */,
 				F72CF6FD24CC1E0F007F4311 /* Assets.xcassets in Resources */,
 				F72CF6FB24CC1E0E007F4311 /* Main.storyboard in Resources */,
@@ -272,6 +287,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7CBD94124CC2F8600340D56 /* CarouselCollectionViewCell.swift in Sources */,
 				F72CF70D24CC2278007F4311 /* ImageResponse.swift in Sources */,
 				F72CF6F824CC1E0E007F4311 /* ViewController.swift in Sources */,
 				F72CF71324CC2541007F4311 /* URLPaths.swift in Sources */,
